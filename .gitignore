@@ -1,0 +1,98 @@
+# ==========================================
+# CrimeGuard AI - Git Ignore Configuration
+# ==========================================
+
+# --- Virtual Environments (Never track environments) ---
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+application/venv/
+*/venv/
+*/env/
+.venv/
+
+# --- Environment Variables & Sensitive Credentials (Privacy & Secrets) ---
+.env
+.env.local
+.env.*.local
+*.env
+local_settings.py
+secrets.json
+
+# --- SQLite Database (Private citizen reports & user data) ---
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+*.db
+
+# --- Media Uploads (Citizen uploaded evidence, photos, audio) ---
+media/
+uploads/
+
+# --- Django Static Cache & Collected Static Files ---
+staticfiles/
+
+# --- Python Cache & Compiled Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Machine Learning Models & Heavy Artifacts ---
+# Large binary weights or generated model checkpoints
+*.pkl
+*.h5
+*.onnx
+
+# --- Logs & Diagnostics ---
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- IDE & Editor Settings (Local developer privacy) ---
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+
+# --- Operating System Artifacts ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# --- Automated Testing & Coverage ---
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
